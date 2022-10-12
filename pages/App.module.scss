@@ -7,30 +7,6 @@ $orange: #F8A300;
 $yellow: #F5B935;
 $blue: #63BCE5;
 
-* { 
-    margin: 0%;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: 'Inter', sans-serif;
-    color: white;
-    scroll-behavior: smooth;
-}
-
-h1 { 
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 1.25rem;
-}
-
-h3 {
-    font-size: 1rem;
-}
-
-a {
-    text-decoration: none;
-}
 
 .hidden {
     display: none;
@@ -47,7 +23,7 @@ a {
     overflow: show;
     
     .landing {
-        .landing-bg {
+        .landingBg {
             position: absolute;
             z-index: -1;
             
@@ -67,7 +43,7 @@ a {
             }
         }
 
-        .landing-content {
+        .landingContent {
             display: flex;
             width: 100vw;
             height: 100vh;
@@ -82,7 +58,7 @@ a {
                 h2 {
                     color: $yellow;
                 }
-                .orange-btn  {
+                .orangeBtn  {
                     h3 {
                         transition: 0.2s;
                         margin-top: 20px;
@@ -162,12 +138,12 @@ a {
         margin-top: 20px;
         padding-bottom: 80px;
         
-        .booking-content {
+        .bookingContent {
             margin-top: 30px;
             width: 75vw;
             margin-inline: auto;
             
-            .booking-title {
+            .bookingTitle {
                 display: flex;
                 
                 .title {
@@ -191,7 +167,7 @@ a {
                         align-items: center;
                         column-gap: 20px;
                         
-                        .contact-bubble {
+                        .contactBubble {
                             background-color: white;
                             padding: 15px 30px;
                             border-radius: 30px;
@@ -212,7 +188,7 @@ a {
                 }
             }
             
-            .booking-part {
+            .bookingPart {
                 display: flex;
                 align-items: center;
                 column-gap: 30px;
@@ -226,14 +202,14 @@ a {
                         margin-left: -20px;
                     }
                 }
-                .booking-form {
+                .bookingForm {
                     margin-top: 50px;
                     display: flex;
                     flex-direction: column;
                     row-gap: 20px;
                     width: 50vw;
         
-                    .blue-btn {
+                    .blueBtn {
                         transition: 0.2s;
                         width: fit-content;
                         background-color: $blue;
@@ -289,7 +265,7 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-    .landing-content {
+    .landingContent {
         flex-direction: column-reverse;
         width: 100vw;
 
@@ -315,8 +291,8 @@ a {
         }
     }
     .booking { 
-        .booking-content {
-            .booking-title {
+        .bookingContent {
+            .bookingTitle {
                 flex-direction: column;
                 row-gap: 20px;
 
@@ -337,11 +313,11 @@ a {
                 }
             
             }
-            .booking-part {
+            .bookingPart {
                 .car {
                     display: none;
                 }
-                .booking-form {
+                .bookingForm {
                     width: 100% !important;
                 }
             }
