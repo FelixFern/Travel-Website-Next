@@ -1,0 +1,350 @@
+
+// Font Setup
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+// Variable
+$orange: #F8A300;
+$yellow: #F5B935;
+$blue: #63BCE5;
+
+* { 
+    margin: 0%;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+h1 { 
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar {
+    width: 75vw;
+    margin-inline: auto;
+}
+
+.content {
+    width: 100vw;
+    margin: auto;
+    overflow: show;
+    
+    .landing {
+        .landing-bg {
+            position: absolute;
+            z-index: -1;
+            
+            .darken {
+                position: absolute;
+                background-color: black;
+                width: 100vw;
+                height: 100vh;
+                opacity: .75;
+                filter: blur(20);
+            }
+            img {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                filter: brightness(-0.05);
+            }
+        }
+
+        .landing-content {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            overflow: visible;
+            align-items: center;
+            margin-inline: auto;
+            justify-content: space-between;
+
+            .left {
+                flex: 1;
+                margin-left: 12.5vw;
+                h2 {
+                    color: $yellow;
+                }
+                .orange-btn  {
+                    h3 {
+                        transition: 0.2s;
+                        margin-top: 20px;
+                        width: fit-content;
+                        background-color: $orange;
+                        padding: 8px 25px;
+                        border-radius: 5px;   
+                        user-select: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            transition: 0.2s;
+                            background-color: $yellow;
+                        }
+                        
+                    }
+                }
+            }
+            
+            .right {
+                flex: 1.5;
+            }
+        }
+    }
+    .about {
+        width: 100vw;
+        padding: 5% 0 5% 0;
+        background-color: $yellow;
+        align-items: center;
+
+        .content {
+            overflow: hidden;
+            align-items: center;
+            display: flex;
+            width: 75vw;
+            column-gap: 30px;
+            margin: auto;
+            .left {
+                width: 200%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            .right {
+                h1 {
+                    width: 75vw;
+                    font-size: 1rem !important;
+                }
+                p {
+                    width: 75vw;
+                    font-weight: 500;
+                }
+            }
+            }
+            
+        }
+    
+    }
+    .activities {
+        width: 75vw;
+        margin: 0;
+        margin-inline: auto;
+        z-index: 99;
+        transform: translateY(-25px);
+
+        h2 { 
+            width: fit-content;
+            background-color: $orange;
+            padding: 10px 40px;
+            border-radius: 8px;
+        }
+    }
+
+    .booking {
+        background-color: $yellow;
+        width: 100vw;
+        margin-top: 20px;
+        padding-bottom: 80px;
+        
+        .booking-content {
+            margin-top: 30px;
+            width: 75vw;
+            margin-inline: auto;
+            
+            .booking-title {
+                display: flex;
+                
+                .title {
+                    flex: 1;
+                    border-right: 3px solid white;
+                    
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+                
+                .contacts {
+                    flex: 3;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 20px;
+                    justify-content: space-around;
+                    
+                    .contact {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 20px;
+                        
+                        .contact-bubble {
+                            background-color: white;
+                            padding: 15px 30px;
+                            border-radius: 30px;
+                            font-size: 1.3rem;
+                            display: flex;
+                            align-items: center;
+                            column-gap: 15px;
+                            
+                            .icon > * {
+                                color: $orange;
+                            }
+                            h3 {
+                                color: black;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            
+            .booking-part {
+                display: flex;
+                align-items: center;
+                column-gap: 30px;
+                overflow: hidden;
+
+                .car {
+                    width: 40vw;
+                    
+                    img {
+                        width: 35vw;
+                        margin-left: -20px;
+                    }
+                }
+                .booking-form {
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    width: 50vw;
+        
+                    .blue-btn {
+                        transition: 0.2s;
+                        width: fit-content;
+                        background-color: $blue;
+                        padding: 8px 25px;
+                        border-radius: 5px;   
+                        user-select: none;
+                        cursor: pointer;
+        
+                        &:hover {
+                            transition: 0.2s;
+                            opacity: .8;
+                        }
+                    }
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                    input[type="date"]::-webkit-calendar-picker-indicator {
+                        filter: invert(1);
+                    }
+                    input {
+                        height: 40px;
+                        background-color: $yellow;
+                        box-shadow: none;
+                        padding: 0 20px;
+                        border: 2px solid white;
+                        
+                        &:focus {
+                            border: 3px solid white;
+                            box-shadow: none;
+                        }
+                        &::placeholder {
+                            color: white;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .footer {
+        width: 75vw;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        color: black;
+        align-items: center;
+        p {
+            color:black
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .landing-content {
+        flex-direction: column-reverse;
+        width: 100vw;
+
+        .left {
+            text-align: center;
+            margin: 0 !important;
+            padding-top: 100px;
+            .orange-btn {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .right {
+            height: fit-content;
+        }
+    }
+    .about {
+        padding: 10% 0 15% 0 !important;
+        .content {
+            .left {
+                display: none;
+            }
+        }
+    }
+    .booking { 
+        .booking-content {
+            .booking-title {
+                flex-direction: column;
+                row-gap: 20px;
+
+                .title {
+                    border-right: none;
+                }
+                .contacts {
+                    justify-content: left;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    margin-top: 20px;
+                    .contact {
+                        width: 100%;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        justify-content: space-between;
+                    }
+                }
+            
+            }
+            .booking-part {
+                .car {
+                    display: none;
+                }
+                .booking-form {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}

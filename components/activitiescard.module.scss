@@ -1,0 +1,62 @@
+// Variable
+$orange: #F8A300;
+$yellow: #F5B935;
+$blue: #63BCE5;
+
+.activitiesCardParent {
+    width: 36vw;
+    aspect-ratio: 16/9;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+
+    img {
+        transition: 0.5s;
+        transform: scale(1.1);
+        width: 36vw;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+    
+    .title {
+        transition: 0.5s;
+        position: absolute;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        bottom: 0;
+        width: 100%;
+        padding: 20px 20px;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        span {
+            color: $orange;
+        }
+    }
+
+    &:hover { 
+        img {
+            transition: 0.5s;
+            transform: scale(1);
+        }
+        .title { 
+            transition: 0.5s;
+            transform: translateY(100%);
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .activities-card-parent {
+        width: 75vw;
+    
+        img {
+            width: 75vw;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+    }
+}

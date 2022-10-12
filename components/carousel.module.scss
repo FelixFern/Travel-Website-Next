@@ -1,0 +1,139 @@
+// Variable
+$orange: #F8A300;
+$yellow: #F5B935;
+$blue: #63BCE5;
+
+.carouselParent {
+    .carouselCardParent {
+        transition: 0.5s;
+        position: relative;    
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+        column-gap: 20px;
+    
+        .carouselCard {  
+            transition: 0.5s;
+            position: relative;  
+            width: 250px;
+            aspect-ratio: 5/8;
+            transform: translate(1);
+            box-shadow: 10px 10px 19px -9px rgba(0,0,0,0.55);
+            
+            img {
+                z-index: -1;
+                position: absolute;
+                width: 250px;
+                border-radius: 15px;
+                aspect-ratio: 5/8;
+                object-fit: cover;
+            }
+            
+            .blank {
+                width: 250px;
+                aspect-ratio: 5/8;
+                border-radius: 15px;
+                background-color: darkgrey;
+                opacity: .8;
+            }
+
+            h3 {
+                position: absolute;
+                bottom: 5%;
+                left: 10%;
+                font-size: 1.25rem;
+                text-shadow: 10px 10px 19px -9px rgba(0,0,0,0.55);
+                user-select: none;
+            }
+        }
+        .darken {
+            transition: 0.5s;
+            filter: brightness(0.3);
+            transform: scale(0.9);
+        }
+    }
+    .slider {
+        width: fit-content;
+        margin-top: 20px;
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        
+        h2 {
+            width: 70px;       
+            user-select: none;      
+            span {
+                color: $orange;
+            }
+        }
+        
+        .sliderBtn {
+            display: flex;
+            column-gap: 10px;
+
+            .btn {
+                cursor: pointer;
+                display: flex;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                border: 2px solid white;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    overflow: visible;
+                    color: $orange;
+                    user-select: none; 
+                }
+
+                &:hover {
+                    background-color: $orange;
+
+                    h3 {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .line {
+            background-color: white;
+            width: 100vw;
+            height: 2px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .carouselParent {
+        position: absolute;
+        left: 12.5vw;
+        top: 140px;
+        overflow-x: hidden;
+
+        .carouselCardParent {
+            transition: 0.5s;
+            position: relative;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            overflow: hidden;
+            column-gap: 20px;
+            .carouselCard {
+                aspect-ratio: 7/8;
+                img {
+                    aspect-ratio: 7/8;
+
+                }
+            }
+        }    
+        .slider {
+            .line {
+                display: none;
+            }
+            
+        }
+    }
+}

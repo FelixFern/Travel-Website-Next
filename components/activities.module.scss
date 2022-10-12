@@ -1,0 +1,25 @@
+// Variable
+$orange: #F8A300;
+$yellow: #F5B935;
+$blue: #63BCE5;
+
+.activitiesParent {
+    margin-inline: auto;
+    margin-top: 35px;
+    width: 75vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+}
+
+@media only screen and (max-width: 800px) {
+    .activitiesParent {
+        margin-inline: auto;
+        margin-top: 35px;
+        width: 75vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+}
