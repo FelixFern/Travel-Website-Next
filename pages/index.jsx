@@ -165,7 +165,7 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={styles.bookingPart}>
-								<div data-aos='fade-up' className="car">
+								<div data-aos='fade-up' className={styles.car}>
 									<img src="assets/car.png" alt=""/>
 								</div>
 								<div className={styles.bookingForm}>
