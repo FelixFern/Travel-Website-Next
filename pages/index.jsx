@@ -82,11 +82,11 @@ export default function Home() {
 				<title>Bintan Tour Travel and Taxi - Bintan, Kepulauan Riau</title>
 				<meta name="description" content="Bintan Tour Travel and Taxi menyediakan Jasa tour, travel, dan taxi di Bintan, Kepulauan Riau dengan harga yang terjangkau"></meta>
 				<meta name="keyword" content='bintan, tour, travel, jasa travel, taxi, murah, kepulauan riau, batam, jalan-jalan, wisata, lagoi, terjangkau, bintan taxi, tour bintan, kawasan bintan, lohan temple, bintan lohan, booking, book now, bintan sleeping buddha, sleeping buddha, gunung bintan, lohan,temple, bintan lohan, seafood, lagoi, bintan kepulauan, travelling, bintan snorkeling'></meta>
-				<meta property="og:url" content="https://www.bintanttourtravelandtaxi.com/"></meta>
+				<meta property="og:url" content="https://www.taxibintan.com/"></meta>
 				<meta property="og:type" content="website"></meta>
 				<meta property="og:site_name" content="Bintan Tour Travel and Taxi - Paket Tour Bintan Terjangkau dan Termurah"></meta>
 				<meta property="og:locale" content="id_ID"></meta>
-				<link rel="canonical" href="https://www.bintanttourtravelandtaxi.com/"></link>
+				<link rel="canonical" href="https://www.taxibintan.com/"></link>
 				<meta name="google-site-verification" content="ZSIXBajhhfEzZbRal7EatpWGPAIUA100WoB2u5JSU7Y" />
 			</Head>
 			<slideContext.Provider value={{ currentSlide, setCurrentSlide }}>
@@ -125,7 +125,7 @@ export default function Home() {
 								<p>Bintan tour travel and taxi adalah perusahaan bergerak di bidang pariwisata menyediakan jasa taxi dan paket travel
 									Bintan tour travel and taxi sangat membantu traveler untuk traveling di kawasan Bintan karena Bintan tour travel and taxi mengenal semua wilayah kawasan Bintan ,anda bisa meminta rekomendasi apa saja untuk memudahkan anda karena Bintan tour travel and taxi mengenal semua tentang wilayah kawasan Bintan .
 									Telah banyak client kami dari berbagai manca negara seperti Singapore terutama karena dekat dengan kawasan Bintan ,China, Amerika, India, Jerman, Malaysia, yang menggunakan jasa travel and taxi kami.
-									Jika anda ingin traveling di kawasan Bintan dengan harga yang murah dan fasilitas yang nyaman bisa menghubungi kami di bintanttourtravelandtaxi.com
+									Jika anda ingin traveling di kawasan Bintan dengan harga yang murah dan fasilitas yang nyaman bisa menghubungi kami di https://www.taxibintan.com/
 								</p>
 							</div>
 						</div>
