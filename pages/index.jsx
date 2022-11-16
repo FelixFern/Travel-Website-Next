@@ -5,6 +5,7 @@ import { imgModalContext, slideContext } from '../global/global-states';
 import { FaWhatsapp } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { SiLine, SiKakaotalk, SiWechat } from 'react-icons/si'
+import { AiFillStar } from 'react-icons/ai'
 import Activities from '../components/Activities';
 import Carousel from '../components/Carousel';
 import Navbar from '../components/Navbar';
@@ -130,7 +131,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className={styles.activities} id={styles.activities} >
+					<div className={styles.activities} id="activities" >
 						<h2 data-aos="fade-right">Bintan Activities and Tourist Attaction</h2>
 						<Activities></Activities>
 					</div>
@@ -178,6 +179,17 @@ export default function Home() {
 									<h3 data-aos='fade-right' className={styles.blueBtn} onClick={() => handleSubmit()}>Book via WA</h3> 
 								</div>
 							</div>
+							<h2 className={styles.ratingTitle}>Puas dengan jasa Bintan Tour Travel and Taxi ?</h2>
+							<a className={styles.rating} href="https://g.page/r/CdI4-mVQQgmgEAI/review">
+								<div className={styles.stars}>
+									<AiFillStar className={styles.icon}></AiFillStar>
+									<AiFillStar className={styles.icon}></AiFillStar>
+									<AiFillStar className={styles.icon}></AiFillStar>
+									<AiFillStar className={styles.icon}></AiFillStar>
+									<AiFillStar className={styles.icon}></AiFillStar>
+								</div>
+								<a className={styles.ratingBtn}><h1>Berikan ratingmu pada jasa kami!</h1></a>
+							</a>
 						</div>
 					</div>
 					<footer className={styles.footer}>
