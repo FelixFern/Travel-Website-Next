@@ -88,7 +88,7 @@ export default function Home() {
 				<meta property="og:site_name" content="Bintan Tour Travel and Taxi - Paket Tour Bintan Terjangkau dan Termurah"></meta>
 				<meta property="og:locale" content="id_ID"></meta>
 				<link rel="canonical" href="https://www.taxibintan.com/"></link>
-				<meta name="google-site-verification" content="ZSIXBajhhfEzZbRal7EatpWGPAIUA100WoB2u5JSU7Y" />
+				<meta name="google-site-verification" content="3y_5j8CMbWMzyOfTzEUf9ndbaBVBCr867X58SsjJtF0" />
 			</Head>
 			<slideContext.Provider value={{ currentSlide, setCurrentSlide }}>
 				<imgModalContext.Provider value={{ modal, setModal }}>
